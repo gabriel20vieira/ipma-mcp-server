@@ -2,6 +2,14 @@
 
 A comprehensive Model Context Protocol (MCP) server providing access to Portuguese weather data from IPMA (Instituto Português do Mar e da Atmosfera).
 
+## Data Source
+
+All data is provided by **IPMA** (Instituto Português do Mar e da Atmosfera, I.P.)
+
+-   API Documentation: https://api.ipma.pt/
+-   Weather forecasts are updated twice daily (00 UTC and 12 UTC)
+-   Times are in UTC (add 0h in winter, +1h in summer for Continental Portugal/Madeira; -1h in winter, 0h in summer for Azores)
+
 ## Features
 
 This MCP server provides complete access to the IPMA API with the following tools:
@@ -132,14 +140,6 @@ This server implements all main IPMA open data endpoints:
 ✅ Previsão do Risco de Incêndio até 2 dias, informação agregada por dia  
 ✅ Previsão do Risco de Ultravioletas até 3 dias (Índice Ultravioleta)  
 ✅ Observação Meteorológica de Estações (dados horários, últimas 24 horas)
-
-## Data Source
-
-All data is provided by **IPMA** (Instituto Português do Mar e da Atmosfera, I.P.)
-
--   API Documentation: https://api.ipma.pt/
--   Weather forecasts are updated twice daily (00 UTC and 12 UTC)
--   Times are in UTC (add 0h in winter, +1h in summer for Continental Portugal/Madeira; -1h in winter, 0h in summer for Azores)
 
 ## Integrating with Open WebUI
 
