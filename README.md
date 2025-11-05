@@ -234,24 +234,6 @@ docker run -p 8000:8000 -v /path/to/ipma-mcp-server:/app \
     -   **Auth**: Bearer token with your API key (`your-secret-key`)
 -   Save and restart Open WebUI if prompted
 
-#### 6. **Enable in Chats**
-
--   In a chat, select a model supporting tool-calling (e.g., GPT-4o via OpenAI or Llama 3 via Ollama)
--   Edit model (pencil icon) > Enable **Tools/Toolkit**
--   In chat: Click **+** next to the prompt > Toggle the IPMA weather toolkit on
--   Test with queries like:
-    -   "What's the weather forecast for Lisboa?"
-    -   "Are there any active weather warnings in Portugal?"
-    -   "What's the fire risk for today?"
-
-### Tips & Troubleshooting
-
--   **Model Support**: Use GPT-4o or Claude for best results; local models like Llama 3 may need fine-tuning for tool usage
--   **Errors**: Check logs in the mcpo terminal. Ensure no firewall blocks port 8000
--   **SSL Issues**: The IPMA API uses HTTPS; if you encounter SSL issues, check your system's CA certificates
--   **Multiple Servers**: Use Docker Compose to manage mcpo + multiple MCP servers
--   **Total Setup Time**: Approximately 5-10 minutes
-
 ### Integration Architecture
 
 ```
