@@ -4,7 +4,7 @@ from mcp.server.fastmcp import FastMCP
 from datetime import datetime
 
 # Initialize FastMCP server
-mcp = FastMCP("weather")
+mcp = FastMCP("IPMA Forecast")
 
 # Constants
 IPMA_API_BASE = "https://api.ipma.pt/open-data"
